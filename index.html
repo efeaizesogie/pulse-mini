@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pulse Mini</title>
+<meta name="description" content="Pulse Mini. A pocket speaker with a 10-hour battery, IP67 sealing and Bluetooth 5.3. Go anywhere. Sound everywhere.">
+<meta name="theme-color" content="#0b0c0b">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='6' width='26' height='20' rx='10' fill='%234a5a3c'/%3E%3Ccircle cx='10.5' cy='13' r='2.2' fill='%23c9d6c3'/%3E%3Ccircle cx='16' cy='13' r='2.2' fill='%23c9d6c3'/%3E%3Ccircle cx='21.5' cy='13' r='2.2' fill='%23c9d6c3'/%3E%3Ccircle cx='16' cy='20.5' r='1.2' fill='%2373a7ff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Logo symbol: the top control panel, drawn flat. Oval plate, three buttons, one LED. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark" viewBox="0 0 32 32">
+    <rect x="2.5" y="5.5" width="27" height="21" rx="10.5" fill="currentColor"/>
+    <circle cx="10.4" cy="13" r="2.3" fill="var(--mark-dot, #fff)"/>
+    <circle cx="16" cy="13" r="2.3" fill="var(--mark-dot, #fff)"/>
+    <circle cx="21.6" cy="13" r="2.3" fill="var(--mark-dot, #fff)"/>
+    <circle class="mark-led" cx="16" cy="20.6" r="1.25" fill="#6ea2ff"/>
+  </symbol>
+</svg>
+
+<header class="nav" data-nav>
+  <div class="nav__inner">
+    <a class="logo" href="#top" aria-label="Pulse Mini home">
+      <svg class="logo__mark"><use href="#mark"/></svg>
+      <span class="logo__word">Pulse Mini</span>
+    </a>
+    <nav class="nav__links" aria-label="Sections">
+      <a href="#design">Design</a>
+      <a href="#inside">Inside</a>
+      <a href="#features">Features</a>
+      <a href="#finishes">Finishes</a>
+      <a href="#specs">Specs</a>
+    </nav>
+    <a class="pill pill--sm pill--accent" href="#buy">Buy <span class="arrow">→</span></a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ 01 · HERO: a film loop, plays on its own ============ -->
+  <section class="hero" aria-label="Pulse Mini">
+    <video class="hero__video" src="media/power-on.mp4" poster="media/posters/power-on.jpg" autoplay muted loop playsinline preload="auto" data-loop aria-hidden="true"></video>
+    <div class="hero__shade" aria-hidden="true"></div>
+    <div class="hero__copy">
+      <p class="eyebrow eyebrow--glass"><span class="dot"></span>New · Just launched</p>
+      <h1 class="hero__title">Pulse Mini</h1>
+      <p class="hero__sub">Go anywhere. Sound everywhere.</p>
+      <div class="hero__cta">
+        <a class="pill pill--light" href="#buy">Buy · $49.99 <span class="arrow">→</span></a>
+        <button class="pill pill--glass" type="button" data-watch-film><span class="play-ico" aria-hidden="true"></span>Watch the film</button>
+      </div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true"><span></span>Scroll</div>
+    <!-- Sound concept: a button click as the thumb presses, a chime as the light comes on.
+         Browsers block sound until the visitor opts in, so it starts off. -->
+    <button class="hero__sound" type="button" data-hero-sound aria-pressed="false">
+      <span class="hero__sound-ico" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span data-hero-sound-label>Sound off</span>
+    </button>
+  </section>
+
+  <!-- ============ 02 · MANIFESTO ============ -->
+  <section class="manifesto" aria-label="About Pulse Mini">
+    <p class="manifesto__text" data-words>
+      Pulse Mini is a speaker you stop thinking about. Clip it to a bag strap. Leave it on a wet rock. Let it play from lunch until the stars come out. It just keeps going, so you can too.
+    </p>
+  </section>
+
+  <!-- ============ 03 · EVERY ANGLE: images loop like a film, scroll stays free ============ -->
+  <section class="turn" id="design" data-turn aria-label="Design">
+    <div class="turn__stage">
+      <header class="turn__head reveal">
+        <p class="eyebrow"><span class="dot"></span>Design</p>
+        <h2 class="h2">Every angle,<br><span class="muted">considered.</span></h2>
+      </header>
+
+      <div class="plate turn__plate">
+        <img class="plate__img is-on" data-angle src="product%20imgs/front-view.jpg" alt="Front view">
+        <img class="plate__img" data-angle src="product%20imgs/angle-45.jpg" alt="Three-quarter view showing the carabiner" loading="lazy">
+        <img class="plate__img" data-angle src="product%20imgs/side-view.jpg" alt="Side view with the USB-C port" loading="lazy">
+        <img class="plate__img" data-angle src="product%20imgs/back-view.jpg" alt="Back view with model details on the base" loading="lazy">
+        <img class="plate__img" data-angle src="product%20imgs/bottom-view.jpg" alt="Tilted view of the ribbed rubber base" loading="lazy">
+        <img class="plate__img" data-angle src="product%20imgs/top-view.jpg" alt="Top view of the control panel" loading="lazy">
+      </div>
+
+      <div class="turn__callout" aria-live="polite">
+        <span class="turn__deg" data-deg>View 01 / 06</span>
+        <h3 data-callout-title>Woven fabric shell</h3>
+        <p data-callout-body>A tight acoustic weave that lets sound out and keeps grit and sand off the driver.</p>
+      </div>
+
+      <div class="turn__rail" aria-label="Views">
+        <button class="is-on" type="button" data-view="0"><i></i>Front</button>
+        <button type="button" data-view="1"><i></i>Three-quarter</button>
+        <button type="button" data-view="2"><i></i>Side</button>
+        <button type="button" data-view="3"><i></i>Back</button>
+        <button type="button" data-view="4"><i></i>Base</button>
+        <button type="button" data-view="5"><i></i>Top</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 04 · INSIDE: assembles and comes apart on a loop ============ -->
+  <section class="inside" id="inside" data-inside aria-label="What's inside">
+    <div class="inside__stage">
+      <header class="inside__head reveal">
+        <p class="eyebrow"><span class="dot"></span>Inside</p>
+        <h2 class="h2">Five parts.<br><span class="muted">Nothing extra.</span></h2>
+      </header>
+
+      <div class="explode" data-explode role="img" aria-label="Exploded view: top control panel, fabric mesh shell, 40mm driver, 2000mAh battery and rubber base">
+        <img class="explode__whole" src="product%20imgs/front-view.jpg" alt="" data-whole>
+        <div class="explode__slice" data-y0="175" data-y1="343"></div>
+        <div class="explode__slice" data-y0="356" data-y1="640"></div>
+        <div class="explode__slice" data-y0="640" data-y1="822" style="clip-path:inset(0 0 0 6%)"></div>
+        <div class="explode__slice" data-y0="822" data-y1="976"></div>
+        <div class="explode__slice" data-y0="976" data-y1="1175"></div>
+      </div>
+
+      <ol class="parts" data-parts>
+        <li><span class="parts__n">01</span><div><b>Top control panel</b><span>Three buttons and a status light, sealed in one piece.</span></div></li>
+        <li><span class="parts__n">02</span><div><b>Fabric mesh shell</b><span>Woven for strength, open enough for sound.</span></div></li>
+        <li><span class="parts__n">03</span><div><b>40 mm driver</b><span>Full, clear sound from a body that fits your hand.</span></div></li>
+        <li><span class="parts__n">04</span><div><b>2000 mAh battery</b><span>Charge once. Listen for ten hours.</span></div></li>
+        <li><span class="parts__n">05</span><div><b>Rubber base</b><span>USB-C port, IP67 seal, grip on any surface.</span></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ 05 · BATTERY chapter (dark) ============ -->
+  <section class="chapter" aria-label="Battery">
+    <div class="wrap">
+      <p class="eyebrow eyebrow--dark reveal"><span class="dot"></span>Battery</p>
+      <h2 class="chapter__big reveal"><span data-count="10">0</span><small>hours</small></h2>
+      <p class="chapter__lede reveal">From the first song at the trailhead to the last one by the fire. <span class="muted">One charge does the whole day.</span></p>
+
+      <div class="batt reveal" data-live>
+        <div class="batt__top">
+          <svg class="batt__mark"><use href="#mark"/></svg>
+          <div><b>Pulse Mini</b><span>Connected · Bluetooth 5.3</span></div>
+          <span class="batt__pct" data-batt-pct>100%</span>
+        </div>
+        <div class="batt__bar"><span data-batt-fill></span></div>
+        <div class="batt__foot"><span data-batt-left>10h 00m left</span><span>2000 mAh</span></div>
+      </div>
+
+      <ul class="stats">
+        <li class="reveal"><b>10<small>hr</small></b><span>Battery life</span></li>
+        <li class="reveal"><b>IP67</b><span>Dust and water</span></li>
+        <li class="reveal"><b>5.3</b><span>Bluetooth</span></li>
+        <li class="reveal"><b>40<small>mm</small></b><span>Driver</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ 06 · OUTSIDE: full-bleed loop ============ -->
+  <section class="outside" aria-label="Built for outdoors">
+    <video class="outside__video" src="media/lake-sway.mp4" poster="media/posters/lake-sway.jpg" muted loop playsinline preload="none" data-loop aria-hidden="true"></video>
+    <div class="outside__shade" aria-hidden="true"></div>
+    <div class="wrap outside__wrap">
+      <h2 class="h2 h2--light reveal">Clip it on.<br><span class="muted-light">Head out.</span></h2>
+      <div class="outside__side reveal">
+        <p class="eyebrow eyebrow--glass"><span class="dot"></span>IP67</p>
+        <p class="outside__body">Rain, river spray, a drop in the lake. Pulse Mini is sealed against dust and fine under a metre of water for thirty minutes. Rinse it off and keep playing.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 07 · FEATURES bento ============ -->
+  <section class="features" id="features" aria-label="Features">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="eyebrow reveal"><span class="dot"></span>Features</p>
+        <h2 class="h2 reveal">Small things,<br><span class="muted">done properly.</span></h2>
+        <p class="sec-sub reveal">Every part of Pulse Mini earns its place. Here is what that looks like up close.</p>
+      </header>
+
+      <div class="bento">
+        <!-- Controls: interactive top panel -->
+        <article class="card card--wide card--controls reveal" data-live>
+          <div class="controls" data-controls>
+            <div class="controls__img">
+              <img src="product%20imgs/top-view.jpg" alt="Top panel with power, Bluetooth and volume buttons" loading="lazy">
+              <button class="hot" style="left:42.97%;top:36.7%" data-btn="power" aria-label="Power"></button>
+              <button class="hot hot--bt" style="left:49.84%;top:36.7%" data-btn="bt" aria-label="Bluetooth"></button>
+              <button class="hot hot--vol" style="left:56.67%;top:36.7%" data-btn="vol" aria-label="Volume up"></button>
+              <span class="hot-led" style="left:49.6%;top:60.2%" data-hot-led aria-hidden="true"></span>
+            </div>
+            <div class="toast" data-toast role="status"><span class="toast__dot"></span><span data-toast-text>Tap a button</span></div>
+            <div class="vol" data-vol aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          </div>
+          <div class="card__text">
+            <p class="card__eyebrow">Controls · Try them</p>
+            <h3>Three buttons. That's the manual.</h3>
+            <p><b>Power, pair, louder.</b> <span>Press the buttons above. The status light tells you what Pulse Mini is doing.</span></p>
+          </div>
+        </article>
+
+        <!-- IP67 -->
+        <article class="card card--water reveal" data-live>
+          <div class="art art--water">
+            <div class="depth">
+              <span class="depth__line depth__line--max" style="--y:14%">1 m</span>
+              <span class="depth__line" style="--y:38%">0.75 m</span>
+              <span class="depth__line" style="--y:62%">0.5 m</span>
+              <span class="depth__line" style="--y:86%">0.25 m</span>
+            </div>
+            <div class="water"><svg viewBox="0 0 400 40" preserveAspectRatio="none"><path d="M0 20 Q50 6 100 20 T200 20 T300 20 T400 20 V40 H0Z"/></svg></div>
+            <div class="frag timer"><span class="timer__ring"></span><div><b data-timer>00:00</b><span>of 30:00 submerged</span></div></div>
+          </div>
+          <div class="card__text">
+            <p class="card__eyebrow">IP67</p>
+            <h3>Dunk-proof.</h3>
+            <p><b>Sealed against dust and water.</b> <span>Rated for one metre, thirty minutes.</span></p>
+          </div>
+        </article>
+
+        <!-- Bluetooth -->
+        <article class="card reveal" data-live>
+          <div class="art art--bt">
+            <span class="ring"></span><span class="ring"></span><span class="ring"></span>
+            <div class="frag pair">
+              <svg class="pair__mark"><use href="#mark"/></svg>
+              <div><b>Pulse Mini</b><span data-pair-state>Searching…</span></div>
+              <span class="pair__tick" data-pair-tick>✓</span>
+            </div>
+            <div class="frag devices">
+              <span>Phone</span><span>Laptop</span><span>Tablet</span>
+            </div>
+          </div>
+          <div class="card__text">
+            <p class="card__eyebrow">Bluetooth 5.3</p>
+            <h3>Pairs in a press.</h3>
+            <p><b>Hold the Bluetooth button.</b> <span>It remembers your phone next time.</span></p>
+          </div>
+        </article>
+
+        <!-- Driver EQ -->
+        <article class="card card--dark reveal" data-live>
+          <div class="art art--eq">
+            <div class="eq" data-eq></div>
+            <div class="frag frag--dark np">
+              <span class="np__art"></span>
+              <div><b>Low Tide</b><span>Now playing · 2:41</span></div>
+            </div>
+          </div>
+          <div class="card__text">
+            <p class="card__eyebrow">40 mm driver</p>
+            <h3>Bigger than it looks.</h3>
+            <p><b>Clear highs, steady lows.</b> <span>Enough to fill a campsite.</span></p>
+          </div>
+        </article>
+
+        <!-- USB-C -->
+        <article class="card reveal" data-live>
+          <div class="art art--usb">
+            <div class="usb">
+              <span class="usb__cable"></span>
+              <span class="usb__plug"></span>
+              <span class="usb__port"></span>
+            </div>
+            <div class="frag charge">
+              <span class="charge__bolt">⚡︎</span>
+              <div><b data-charge>Charging · 64%</b><span>USB-C · 5V ⎓ 1A</span></div>
+            </div>
+          </div>
+          <div class="card__text">
+            <p class="card__eyebrow">USB-C</p>
+            <h3>One cable for everything.</h3>
+            <p><b>Same charger as your phone.</b> <span>The port sits inside the sealed base.</span></p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 08 · FINISHES ============ -->
+  <section class="finishes" id="finishes" data-finish="sage" aria-label="Finishes">
+    <div class="wrap finishes__wrap">
+      <header class="finishes__head">
+        <p class="eyebrow"><span class="dot"></span>Finishes</p>
+        <h2 class="h2">Two finishes.<br><span class="muted" data-finish-line>Sage, for the trail.</span></h2>
+      </header>
+      <div class="plate finishes__plate">
+        <img class="plate__img finish--sage" src="product%20imgs/angle-45.jpg" alt="Pulse Mini in Sage" loading="lazy">
+        <img class="plate__img finish--midnight" src="product%20imgs/darkmode.jpg" alt="Pulse Mini in Midnight" loading="lazy">
+      </div>
+      <div class="swatches" role="radiogroup" aria-label="Choose a finish">
+        <button class="swatch is-on" role="radio" aria-checked="true" data-pick="sage"><span class="swatch__dot" style="--c:#9cb097"></span>Sage</button>
+        <button class="swatch" role="radio" aria-checked="false" data-pick="midnight"><span class="swatch__dot" style="--c:#1d1f22"></span>Midnight</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 09 · FILM (video-ready) ============ -->
+  <!-- The film plays inline. The same footage runs behind the section,
+       blown up and blurred into a liquid-glass backdrop. Source: media/film.mp4 -->
+  <section class="film" id="film" data-film aria-label="Film">
+    <div class="film__bg" aria-hidden="true">
+      <img src="media/posters/cabin-table.jpg" alt="">
+      <canvas width="96" height="54" data-film-bg></canvas>
+    </div>
+    <div class="film__glass" aria-hidden="true"></div>
+
+    <div class="wrap film__wrap">
+      <header class="film__head">
+        <p class="eyebrow eyebrow--glass reveal"><span class="dot"></span>Film · 1:05</p>
+        <h2 class="h2 h2--light reveal">A day with Pulse Mini.<br><span class="muted-light">Trailhead to campfire.</span></h2>
+      </header>
+
+      <div class="player reveal" data-player>
+        <div class="player__screen">
+          <img class="player__poster" src="media/posters/cabin-table.jpg" alt="Pulse Mini on a cabin table at dawn" loading="lazy">
+          <!-- Played in order as one film. Two layers so each cut dissolves instead of flashing. -->
+          <video class="player__video" data-film-layer muted playsinline preload="none"></video>
+          <video class="player__video" data-film-layer muted playsinline preload="none"></video>
+          <ol data-film-playlist hidden>
+            <li data-src="media/cabin-table.mp4">First light</li>
+            <li data-src="media/power-on.mp4">Power on</li>
+            <li data-src="media/clip-on.mp4">Clip on</li>
+            <li data-src="media/hiker.mp4">Trailhead</li>
+            <li data-src="media/on-backpack.mp4">On the move</li>
+            <li data-src="media/river.mp4">River</li>
+            <li data-src="media/lake-friends.mp4">The lake</li>
+            <li data-src="media/volume-up.mp4">Louder</li>
+            <li data-src="media/campfire.mp4">Campfire</li>
+            <li data-src="media/midnight-fire.mp4">After dark</li>
+            <li data-src="media/plinth.mp4">Pulse Mini</li>
+          </ol>
+          <button class="player__big" type="button" data-film-toggle aria-label="Play film"><span class="play-ico play-ico--lg"></span></button>
+          <p class="player__chapter" data-film-chapter aria-live="polite"></p>
+          <div class="player__bar">
+            <button class="player__btn" type="button" data-film-toggle aria-label="Play"><span class="ico-play"></span></button>
+            <div class="player__track" data-film-seek><span data-film-progress></span></div>
+            <span class="player__time" data-film-time>0:00</span>
+            <button class="player__btn player__btn--wide" type="button" data-film-mute aria-pressed="false">Sound off</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 10 · SPECS ============ -->
+  <section class="specs" id="specs" aria-label="Tech specs">
+    <div class="wrap">
+      <header class="sec-head sec-head--left">
+        <p class="eyebrow reveal"><span class="dot"></span>Tech specs</p>
+        <h2 class="h2 reveal">The numbers,<br><span class="muted">plainly.</span></h2>
+      </header>
+      <dl class="spec-grid">
+        <div class="reveal"><dt>Battery</dt><dd>2000 mAh Li-ion<br><span>Up to 10 hours playback</span></dd></div>
+        <div class="reveal"><dt>Water &amp; dust</dt><dd>IP67<br><span>1 m for 30 minutes</span></dd></div>
+        <div class="reveal"><dt>Wireless</dt><dd>Bluetooth 5.3</dd></div>
+        <div class="reveal"><dt>Driver</dt><dd>40 mm full-range</dd></div>
+        <div class="reveal"><dt>Charging</dt><dd>USB-C<br><span>5V ⎓ 1A</span></dd></div>
+        <div class="reveal"><dt>Controls</dt><dd>Power, Bluetooth, volume<br><span>Status LED</span></dd></div>
+        <div class="reveal"><dt>Materials</dt><dd>Woven fabric shell<br><span>Rubber base, stainless steel clip</span></dd></div>
+        <div class="reveal"><dt>Finishes</dt><dd>Sage, Midnight</dd></div>
+        <div class="reveal"><dt>Model</dt><dd>PLM-01<br><span>Designed in California</span></dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ 11 · BUY ============ -->
+  <section class="buy" id="buy" aria-label="Buy">
+    <div class="wrap">
+      <div class="buy__card reveal">
+        <div class="buy__copy">
+          <p class="eyebrow eyebrow--dark"><span class="dot"></span>Pulse Mini</p>
+          <h2 class="h2 h2--light">Take it with you.<br><span class="muted-light">$49.99</span></h2>
+          <p class="buy__meta">Free shipping · 30-day returns</p>
+          <div class="buy__cta">
+            <a class="pill pill--accent" href="#buy">Buy now <span class="arrow">→</span></a>
+            <a class="pill pill--glass" href="#specs">Compare specs</a>
+          </div>
+        </div>
+        <div class="buy__img">
+          <img src="product%20imgs/front-view.jpg" alt="Pulse Mini in Sage" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__top">
+    <div class="foot__brand">
+      <a class="logo logo--light" href="#top" aria-label="Pulse Mini home">
+        <svg class="logo__mark"><use href="#mark"/></svg>
+        <span class="logo__word">Pulse Mini</span>
+      </a>
+      <p>A small speaker for big days outside.</p>
+    </div>
+    <div class="foot__cols">
+      <div><h4>Product</h4><a href="#design">Design</a><a href="#features">Features</a><a href="#specs">Specs</a></div>
+      <div><h4>Support</h4><a href="#">Setup guide</a><a href="#">Warranty</a><a href="#">Contact</a></div>
+      <div><h4>Company</h4><a href="#">About</a><a href="#">Journal</a><a href="#">Press</a></div>
+    </div>
+  </div>
+  <div class="wrap foot__legal"><span>© 2026 Pulse. All rights reserved.</span><span>Model PLM-01</span></div>
+  <div class="foot__word" aria-hidden="true">Pulse Mini</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

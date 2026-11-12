@@ -1,0 +1,8 @@
+# marketing outputs and raw source footage (large, not part of the site)
+mockups/
+product videos/
+.claude/
+.vercel
+node_modules/
+.DS_Store
+Thumbs.db
